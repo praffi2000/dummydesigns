@@ -1,0 +1,111 @@
+
+
+@font-face {font-family: FGB;src: url(FOUNDRYGRIDNIK-EXTRABOLDITALIC.OTF);}
+@font-face {font-family: FB;src: url(Faction-Black.woff2);}
+@font-face {font-family: FO;src: url(Faction-Outline.woff2);}
+@font-face {font-family: MO;src: url(Molle-Italic.ttf);} 
+@font-face {font-family: BF;src: url(Buffon-Thin.otf);}
+@font-face {font-family: TFC;src: url(TofinoProPersonalNarrow-Regular.woff2);} 
+@font-face {font-family: TFW;src: url(TofinoProPersonalWide-Regular.woff2);} 
+@font-face {font-family: KB;src: url(blou.woff2);} 
+
+html {
+  scroll-behavior: smooth;
+}
+#section1{width: 500px; margin-left: 100px}
+#section2{background-color:#121212; width: 100%; height: 600px;padding-top: 50px}
+            .arear{width: 1000px; ;height: 320px;position:absolute;left:-195px; border-radius: 10%}
+            .arear:hover ~ .fillcircle{border:5px solid #ff0613; background-color: rgba( 7, 7, 7, 0 );width: 20px;height: 20px; left:940px;border-radius:100%;transition-delay:  0s; top:510px}
+.arear:hover{cursor: crosshair}
+            .arear:hover ~ .strokecircle{background-color:black;left:-260px;  border: 0px;position: absolute;width: 310px;height: 310px;border-radius: 50px 0px 50px 0px;transition-delay:  0s;}
+            .arear:hover ~ .clo {opacity: 100%;transition-delay:  0s} 
+            .arear:hover ~ .ele {opacity: 100%;transition-delay:  0s} 
+            .arear:hover ~ .eleb{opacity: 0;transition-delay:  0s}
+            .arear:hover ~ .clob{opacity: 0;transition-delay:  0s}
+            .fillcircle{width: 300px; height: 300px; border-radius:0%; ;position: absolute; transition: .7s; left:85px;pointer-events: none;margin-top:-314px; z-index:-7;transition-delay:  1s;border:5px solid #ff0613;top:320px}
+            .strokecircle{left:85px; width: 300px; height:300px;  border-radius:0%; transition: .7s; border:5px solid black; position:absolute; pointer-events:none; margin-top:-314px; z-index:-7;transition-delay:  1s; background-color: black}
+            .ele{left:120px; margin-top:-297px; color:aliceblue; font-family:BF; text-align: center; font-size:80px; opacity:0; color:antiquewhite; position: absolute;pointer-events:none; z-index:-5; transition:.5s;;transition-delay:  1s;}
+            .clo{left:-200px; margin-top:-240px; color:aliceblue; font-family: KB; text-align: center; font-size:140px; opacity:0; background: rgb(119,217,32);
+background: linear-gradient(68deg, rgba(119,217,32,1) 0%, rgba(255,0,22,1) 100%);-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; position: absolute;pointer-events:none; z-index:-5; transition:.5s;;transition-delay:  1s;}
+            .hid{left:-20px; pointer-events:none; width:550px; height: 320px;}
+            .eleb{left:120px; margin-top:-320px; text-align:center; font-family:BF; text-align:center; font-size:80px; color:antiquewhite; position: absolute; pointer-events:none; transition:.5s;;transition-delay:  1s;}
+            .clob{left:-200px; margin-top:-240px; text-align:center; font-family: KB; text-align:center; font-size:140px; background: rgb(119,217,32);
+background: linear-gradient(68deg, rgba(119,217,32,1) 0%, rgba(255,0,22,1) 100%);-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; position: absolute; pointer-events:none; transition:.5s;;transition-delay:  1s;}
+            .contcenter{position: absolute;-webkit-transform: translateX(-40%) ;-moz-transform: translateX(-40%) ;transform: translateX(-40%) ;left:40%;width: 510px;margin-top:-90px}
+
+.parent{width:100%; height: 600px; overflow: hidden}
+.ss1{background-color:#474747; width: 100%; height: 100%; overflow: hidden;opacity: 100%; transition: .7s}
+
+.ss1:hover  { opacity: 10%; transform: scale(1.2)}
+
+.dd{height: 50px;width: 500px; margin: auto;text-align:center;letter-spacing: 30px; font-family: FGB; color: white; font-size: 50px; transition: .3s}
+.dummy{height: 50px;width: 500px; margin: auto;text-align: center; font-family: FGB; color: white; font-size: 50px; transition: .3s; margin-top: -50px; opacity: 0; pointer-events: none; letter-spacing: -30px}
+.dd:hover{opacity: 0; letter-spacing: 50px;cursor:default}
+.dd:hover ~ .dummy{opacity: 100; letter-spacing: normal}
+
+p1{font-family: TFW; color:#9e9e9e; font-size: 20px}        p2{font-family: TFW; color:#686868; font-size: 20px}
+    .f1{; font-family: FB; font-size: 160px; text-align: center;color:white; line-height: 85%;text-shadow:0px 0px 100px rgba( 255, 255, 255, 0.602), 0px 0px 15px rgba( 255, 255, 255, 0.602 ); animation: flic 1.8s ;animation-iteration-count: 1;transition: .4s}
+    @keyframes flic {
+  0% {
+    opacity:0.1;
+   
+  }
+  2% {
+      opacity:1;
+        }
+  8% {
+    opacity:0.1;
+   
+  }
+  9% {
+    opacity:1;
+  }
+  12% {
+    opacity:0.1;
+  }
+  20% {
+    opacity:1;
+  }
+  25% {
+    opacity:0.3;
+  }
+  30% {
+    opacity:1;
+  }
+  70% {
+    opacity:0.7;
+  }
+  72% {
+    opacity:0.2;
+  }
+  77% {
+    opacity:.9;
+  }
+  100% {
+    opacity:.9;
+  }
+}
+    .gg{; font-family: FB; font-size: 160px; opacity: 0; text-align: center;color:white; margin-top: -165px;text-shadow:0px 0px 100px rgba( 255, 255, 255, 0.602), 0px 0px 15px rgba( 255, 255, 255, 0.602 ); animation: flic .5s linear ;animation-delay: .5s; animation-iteration-count:3; animation-fill-mode:forwards}
+    
+    .hh{; font-family: FB; font-size: 160px;opacity: 0; text-align: center;color:white; margin-top: -165px;text-shadow:0px 0px 100px rgba( 255, 255, 255, 0.602), 0px 0px 15px rgba( 255, 255, 255, 0.602 ); animation: flic 2s;animation-delay: 1s ;animation-iteration-count:1;animation-fill-mode:forwards}
+  
+    
+    .hh:hover{font-family: FO;  cursor:crosshair;}
+    .hh:active{font-family: FO;color:yellow}
+    .gg:hover{font-family: FO;cursor: crosshair}
+    .gg:active{font-family: FO;color: aqua}
+    .f1:hover{font-family: FO;cursor: crosshair;}
+    .f1:active{font-family: FO;color:chartreuse;text-shadow:0px 0px 100px chartreuse, 0px 0px 25px yellow; animation: flic 1.8s ;animation-iteration-count: infinite}
+
+.cb1{height: 50%; padding: 50px;background-color:#0a0a0a;width: 30%; float: right;margin-left: 10px;margin-right: 10px; margin-top: 50px;}
+.cb2{height: 50%; padding: 50px;background-color:#0a0a0a;width: 30%; float: right;margin-left: 10px;margin-right: 10px; margin-top: 50px;}
+.cb3{height: 50%; padding: 50px;background-color:#0a0a0a;width: 30%; float: right;margin-left: 10px;margin-right: 10px; margin-top: 20px;}
+.cb4{height: 50%; padding: 50px;background-color:#0a0a0a;width: 30%; float: right;margin-left: 10px;margin-right: 10px; margin-top: 20px;}
+.cb1:hover{cursor: url("https://cdn0.iconfinder.com/data/icons/Toolbar_Icon_Set_by_shlyapnikova/32/soccer.png"),auto}    .cb3:hover{cursor:  url(simp.png),auto}    .cb2:hover{cursor: url("https://secure.webtoolhub.com/static/resources/icons/set147/def2a313.png"),auto}    .cb4:hover{cursor: url("https://globalsolarsupply.com/wp-content/uploads/2018/09/visa.png"),auto}
+
+
+.glowbox{width: 8%; height: 45px; background-color: black;text-align: center;vertical-align: middle;font-family: FO; color: aliceblue; font-size: 30px; -webkit-transition: .2s;float: right;margin: 1px;padding-top:10px}
+.glowbox:hover{  -webkit-filter: drop-shadow(0px 0px 35px rgba( 255, 255, 255, 0.602)) drop-shadow(0px 0px 15px white);-webkit-transition: .2s;cursor: crosshair;font-family: FB;color: black; background-color: white; transform: scale(1.15)}
+.glowbox:focus, .glowbox:active{  -webkit-filter: drop-shadow(0px 0px 35px rgba( 255, 255, 255, 0.602)) drop-shadow(0px 0px 15px white);-webkit-transition: .2s;cursor: crosshair;font-family: FB;color: black; background-color: white; transform: scale(1.4)}
